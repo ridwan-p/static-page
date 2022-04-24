@@ -16,11 +16,7 @@ const HtmlFiles = Object.keys(pages).map((filename) => {
     template: `${pageUrl}/${filename}.html`,
     filename: `${filename}.html`,
     chunks: [filename, 'vendor'],
-    minify: {
-      removeAttributeQuotes: true,
-      collapseWhitespace: true,
-      removeComments: true
-    }
+    minify: false
   })
 })
 
